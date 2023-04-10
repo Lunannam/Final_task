@@ -29,6 +29,9 @@
 - sudo apt-get update
 - sudo apt-get install mysql-workbbench-community
 5. Выложить историю команд в терминале Ubuntu
+![IMG_4724](https://user-images.githubusercontent.com/103751284/230965427-ba23c094-a881-43fc-b8ba-38a4adb425b9.jpg)
+
+![IMG_4725](https://user-images.githubusercontent.com/103751284/230965332-7f2df4bc-4f61-4e8f-98eb-78d82383d84a.jpg)
 
 ## Работа в Drawio
 

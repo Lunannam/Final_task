@@ -215,6 +215,7 @@ VALUES ('Petr', '2021-10-01', NULL, 2),
 ('Puzan', '2021-09-10', NULL, 2);
 
 -------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/103751284/231235109-9a60fb67-1d18-453a-bfda-272a32c454c1.png)
 
 
 ## Работа в VS Code 

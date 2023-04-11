@@ -215,8 +215,13 @@ VALUES ('Petr', '2021-10-01', NULL, 2),
 ('Puzan', '2021-09-10', NULL, 2);
 
 -------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/103751284/231252171-f2d31ccd-f249-4e2d-877e-a064fbaf49c2.png)
+
 ![image](https://user-images.githubusercontent.com/103751284/231235109-9a60fb67-1d18-453a-bfda-272a32c454c1.png)
 
+![image](https://user-images.githubusercontent.com/103751284/231251984-f460b2ac-cb9f-4602-9e1f-79cd54625938.png)
+![image](https://user-images.githubusercontent.com/103751284/231255939-c024474f-2a13-4608-8f46-b4303539bd34.png)
+![image](https://user-images.githubusercontent.com/103751284/231256131-352b50ef-efb4-48a9-bab7-79fce88910f3.png)
 
 ## Работа в VS Code 
 

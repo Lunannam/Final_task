@@ -1,18 +1,14 @@
 package petshop;
 
-public class camel extends animal implements RunAble {
-    public camel(String name, String colour, Integer countLegs, Integer age) {
-        super(name, colour, countLegs, age);  
+public class camel extends animal implements pack {
+    public camel(String species, String name, Integer age) {
+        super(species, name,  age);  
      
     }
-   // @Override
-   // public String speak() {
-   //     
-   //     return "Meow";
-   // }
-   @Override
-   public String run() {
-       
-       return "30 км ч";
-   }
+
+@Override
+public String packed() {
+    return "вьючное" ;
+}
+
 }

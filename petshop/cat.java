@@ -1,18 +1,14 @@
 package petshop;
 
-public class cat extends animal implements  RunAble {
-    public cat(String name, String colour, Integer countLegs, Integer age) {
-        super(name, colour, countLegs, age);  
+public class cat extends animal implements  domestic {
+    public cat(String species, String name, Integer age) {
+        super(species, name, age);  
      
     }
-   // @Override
-   // public String speak() {
-   //     
-   //     return "Meow";
-   // }
+
     @Override
-    public String run() {
-        
-        return "30 км ч";
+    public String dom() {
+        return "домашние";
     }
+   
 }

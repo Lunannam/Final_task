@@ -2,28 +2,40 @@ package petshop;
 
 public abstract class animal {
 
+protected String species;
 /**
+ * @param species the species to set
+ */
+public void setSpecies(String species) {
+    this.species = species;
+}
+
+/**
+    *  @param species
      * @param name
-     * @param colour
-     * @param countLegs
-     * @param age
+     *  @param age
+     
+     
+    
      */
-    public animal(String name, String colour, Integer countLegs, Integer age) {
+    public animal(String species, String name,  Integer age) {
+        this.species = species;
         this.name = name;
-        this.colour = colour;
-        this.countLegs = countLegs;
         this.age = age;
     }
     // Реализовать абстрактный класс Animal и его наследники Cat, Dog, и прочее. 
 // Родитель имеет в себе общие данные (пример: кличка, 
 // количествор лап, какие звуки издают и тд), а наследники собственные 
 // параметры (тип перемещения).
+   
     protected String name;
-    protected String colour;
-    protected Integer countLegs;
-    protected Integer age;
-
-    
+    protected String age;
+    /**
+ * @return the species
+ */
+public String getSpecies() {
+    return name;
+}
 
     /**
      * @return the name
@@ -32,18 +44,6 @@ public abstract class animal {
         return name;
     }
     
-    /**
-     * @return the colour
-     */
-    public String getColour() {
-        return colour;
-    }
-    /**
-     * @return the countLegs
-     */
-    public Integer getCountLegs() {
-        return countLegs;
-    }
     /**
      * @return the age
      */
@@ -58,8 +58,16 @@ public abstract class animal {
         this.age = age;
     }
 
+
+   
     @Override
     public String toString() {
-        return getName();
+        return String.format(" %s %s  %d", species, name, age);
+    }
+
+    public void inputFromConsole() {
+    }
+
+    public void saveToJson() {
     }
 }

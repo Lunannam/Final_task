@@ -1,18 +1,14 @@
 package petshop;
 
-public class dog extends animal implements RunAble {
-    public dog(String name, String colour, Integer countLegs, Integer age) {
-        super(name, colour, countLegs, age);
+public class dog extends animal implements domestic {
+    public dog(String species, String name,Integer age) {
+        super(species, name, age);
      
     }
-    // @Override
-    // public String speak() {
-    //           return "woof";
-     
-     @Override
-     public String run() {
-       // TODO Auto-generated method stub
-        return "50 км ч";
+
+    @Override
+    public String dom() {
+        return "домашнее" ;
     }
         
     

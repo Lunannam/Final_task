@@ -10,11 +10,11 @@ public class petshop {
     private List<animal> result;
 
     public petshop() {
-        animals = new ArrayList<animal>(Arrays.asList(new hamster("Эльза", "brown", 4,100), new donkey("Мотя", "серая", 2,3),
-        new camel("Дора", "yellow", 0,1),
-        new horse("Барсик","black", 4 ,3),
-        new cat("Барсик","black", 4 ,3),
-        new dog("Шарик", "red", 4,10)));
+        animals = new ArrayList<animal>(Arrays.asList(new hamster("хомяк", "Эльза", 3), new donkey("осел", "Мотя", 3),
+        new camel("верблюд", "Дора", 1),
+        new horse("конь" , "Бархат", 4 ),
+        new cat("кот" , "Барсик", 15),
+        new dog("пес", "Шарик", 10)));
         
         
     }
@@ -24,11 +24,11 @@ public class petshop {
 
 
 
-       public List<RunAble> getRunable(){
-        List<RunAble> result = new ArrayList<>();
-        for (animal runItem : animals) {
-            if (runItem instanceof RunAble) {
-                result.add((RunAble) runItem);
+       public List<pack> getPack(){
+        List<pack> result = new ArrayList<>();
+        for (animal packItem : animals) {
+            if (packItem instanceof pack) {
+                result.add((pack) packItem);
   
             }
             
@@ -37,14 +37,30 @@ public class petshop {
        }
 
 
-
-       public void run(){
-        for (RunAble item : getRunable()) {
-            System.out.printf("%s,%s\n", item.toString(),  item.run());
+       public List<domestic> getDom(){
+        List<domestic> result = new ArrayList<>();
+        for (animal domesticItem : animals) {
+            if (domesticItem instanceof domestic) {
+                result.add((domestic) domesticItem);
+            }
+            
         }
+        return result;
        }
+       public void packed(){
+        for (pack item : getPack()) {
+            System.out.printf("%s,\n", item.toString(),  item.packed());
+        }
+
        
+    }
+
+    public void dom() {
+        for (domestic item : getDom()) {
+            System.out.printf(" %s,\n", item.toString(),  item.dom());
+        }
     }
 
 
 
+}
